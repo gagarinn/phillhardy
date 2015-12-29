@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.UUID;
 
 /**
- * Created by Администратор on 28.12.2015.
+ * Created by РђРґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂ on 28.12.2015.
  */
 public class CrimePagerActivity extends FragmentActivity {
     private ViewPager mViewPager;

@@ -6,7 +6,7 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 
 /**
- * Created by Администратор on 21.06.2015.
+ * Created by РђРґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂ on 21.06.2015.
  */
 public abstract class SingleFragmentActivity extends FragmentActivity {
     protected abstract Fragment createFragment();

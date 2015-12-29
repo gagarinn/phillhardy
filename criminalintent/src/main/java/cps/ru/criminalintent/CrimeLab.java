@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.UUID;
 
 /**
- * Created by Администратор on 21.06.2015.
+ * Created by РђРґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂ on 21.06.2015.
  */
 public class CrimeLab {
     private static CrimeLab sCrimeLab;
@@ -20,7 +20,7 @@ public class CrimeLab {
         for (int i = 0; i < 100; i++) {
             Crime c = new Crime();
             c.setTitle("Crime #" + i);
-            c.setSolved(i % 2 == 0); // Для каждого второго объекта
+            c.setSolved(i % 2 == 0); // Р”Р»СЏ РєР°Р¶РґРѕРіРѕ РІС‚РѕСЂРѕРіРѕ РѕР±СЉРµРєС‚Р°
             mCrimes.add(c);
         }
     }

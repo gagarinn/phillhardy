@@ -49,12 +49,12 @@ public class CrimeListFragment extends ListFragment {
         }
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
-// Если мы не получили представление, заполняем его
+// Р•СЃР»Рё РјС‹ РЅРµ РїРѕР»СѓС‡РёР»Рё РїСЂРµРґСЃС‚Р°РІР»РµРЅРёРµ, Р·Р°РїРѕР»РЅСЏРµРј РµРіРѕ
             if (convertView == null) {
                 convertView = getActivity().getLayoutInflater()
                         .inflate(R.layout.list_item_crime, null);
             }
-// Настройка представления для объекта Crime
+// РќР°СЃС‚СЂРѕР№РєР° РїСЂРµРґСЃС‚Р°РІР»РµРЅРёСЏ РґР»СЏ РѕР±СЉРµРєС‚Р° Crime
             Crime c = getItem(position);
             TextView titleTextView =
                     (TextView)convertView.findViewById(R.id.crime_list_item_titleTextView);

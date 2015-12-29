@@ -15,7 +15,7 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 
 /**
- * Created by Администратор on 28.12.2015.
+ * Created by РђРґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂ on 28.12.2015.
  */
 public class DatePickerFragment extends DialogFragment {
     public static final String EXTRA_DATE =
@@ -31,7 +31,7 @@ public class DatePickerFragment extends DialogFragment {
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         mDate = (Date)getArguments().getSerializable(EXTRA_DATE);
-// создание объекта Calendar для получения года, месяца и дня
+// СЃРѕР·РґР°РЅРёРµ РѕР±СЉРµРєС‚Р° Calendar РґР»СЏ РїРѕР»СѓС‡РµРЅРёСЏ РіРѕРґР°, РјРµСЃСЏС†Р° Рё РґРЅСЏ
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(mDate);
         int year = calendar.get(Calendar.YEAR);
@@ -46,10 +46,10 @@ public class DatePickerFragment extends DialogFragment {
         DatePicker datePicker = (DatePicker)v.findViewById(R.id.dialog_date_datePicker);
         datePicker.init(year, month, day, new DatePicker.OnDateChangedListener() {
             public void onDateChanged(DatePicker view, int year, int month, int day) {
-// Преобразование года, месяца и дня в объект Date
+// РџСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёРµ РіРѕРґР°, РјРµСЃСЏС†Р° Рё РґРЅСЏ РІ РѕР±СЉРµРєС‚ Date
                 mDate = new GregorianCalendar(year, month, day).getTime();
-// обновление аргумента для сохранения
-// выбранного значения при повороте
+// РѕР±РЅРѕРІР»РµРЅРёРµ Р°СЂРіСѓРјРµРЅС‚Р° РґР»СЏ СЃРѕС…СЂР°РЅРµРЅРёСЏ
+// РІС‹Р±СЂР°РЅРЅРѕРіРѕ Р·РЅР°С‡РµРЅРёСЏ РїСЂРё РїРѕРІРѕСЂРѕС‚Рµ
                 getArguments().putSerializable(EXTRA_DATE, mDate);
             }
         });

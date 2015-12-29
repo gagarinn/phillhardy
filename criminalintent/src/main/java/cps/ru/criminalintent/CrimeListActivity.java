@@ -7,7 +7,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 
 /**
- * Created by Администратор on 21.06.2015.
+ * Created by РђРґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂ on 21.06.2015.
  */
 //@TargetApi(Build.VERSION_CODES.HONEYCOMB)
 public class CrimeListActivity extends SingleFragmentActivity {
